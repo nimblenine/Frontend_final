@@ -2,6 +2,7 @@ import { Box, Stack } from '@chakra-ui/react';
 import MenuItem from './MenuItem';
 const MenuLinks = ({ isOpen }) => {
     return (
+
         <Box
             display={{ base: isOpen ? "block" : "none", md: "block" }}
             flexBasis={{ base: "100%", md: "auto" }}>
@@ -11,10 +12,13 @@ const MenuLinks = ({ isOpen }) => {
                 justify={["center", "space-between", "flex-end", "flex-end"]}
                 direction={["column", "row", "row", "row"]}
                 pt={[4, 4, 0, 0]}>
-                <MenuItem to="/">Home</MenuItem>
-                <MenuItem to="/how">How It Works</MenuItem>
+                <MenuItem to="/">Dashboard</MenuItem>
+                <MenuItem to="/products">Products</MenuItem>
+                <MenuItem to="/cart">Cart</MenuItem>
+                <MenuItem to="/transaction">Transaction</MenuItem>
             </Stack>
         </Box>
+
     )
 }
 

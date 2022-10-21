@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from './Navigation/Logo';
 import MenuLinks from "./Navigation/MenuLinks";
-import MenuToggle from "./Navigation/MenuToggle";
+import LoginSignup from "./Navigation/LoginSignup";
 import NavBarContainer from "./Navigation/NavBarContainer";
 
 
@@ -15,7 +15,7 @@ const NavBar = (props) => {
             <Logo w="100px" />
             <MenuLinks isOpen={isOpen} />
 
-            <MenuToggle toggle={toggle} isOpen />
+            <LoginSignup />
         </NavBarContainer>
     )
 }

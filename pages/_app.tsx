@@ -4,7 +4,7 @@ import { ColorModeProvider } from "@chakra-ui/react";
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider>
-      <ColorModeProvider options={{ initialColorMode: 'dark', useSystemColorMode: true }} />
+      <ColorModeProvider options={{ initialColorMode: 'light', useSystemColorMode: true }} />
       <Component {...pageProps} />
     </ChakraProvider>
   )

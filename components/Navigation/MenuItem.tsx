@@ -5,7 +5,7 @@ const MenuItem = ({ children, to = "/", ...rest }) => {
 
     return (
         <Link href={to}>
-            <Text display="block" {...rest} color={useColorModeValue('black', 'white')} px={4}>
+            <Text display="block" {...rest} color={useColorModeValue('black', 'black')} px={4}>
                 {children}
             </Text>
         </Link>
